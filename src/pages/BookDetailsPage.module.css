@@ -1,0 +1,110 @@
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #333;
+}
+.container {
+  width: 1320px;
+  display: block;
+  margin: 0 auto;
+  padding: 15px;
+}
+.bookDetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: flex-start;
+}
+.bookImg {
+  width: 100% !important;
+}
+.bookHeading {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.description {
+  font-size: 14px;
+}
+
+.wishlistButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.wishlistButton.wishlisted {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+@media (min-width: 1320px) and (max-width: 1900px) {
+  
+}
+
+@media (min-width: 1024px) and (max-width: 1320px) {
+  .container {
+    width: 1024px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 768px;
+  }
+  .bookDetails {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .bookHeading , .description{
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .bookDetails {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .container {
+    width: 100%;
+  }
+  .bookHeading,
+  .description {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 480px) {
+  .bookHeading {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .bookDetails {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .container {
+    width: 100%;
+  }
+  .bookHeading,
+  .description {
+    margin-bottom: 10px;
+  }
+}
+
+

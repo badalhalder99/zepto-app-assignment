@@ -1,0 +1,279 @@
+
+.container {
+  width: 1320px;
+  display: block;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.left{
+
+}
+.right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchInput {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  color: black;
+  outline: none;
+  border-radius: 30px;
+  margin-right: 10px;
+  height: 44px;
+}
+.genreFilter {
+  padding: 10px 15px;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  height: 44px;
+  width: 250px;
+}
+.searchWrap{
+  position: relative;
+}
+.searchIcon {
+  position: absolute;
+  top: 14px;
+  right: 25px;
+  font-size: 16px;
+  color: #ddd;
+}
+.bookListWrap{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 16px;
+  margin-top: 20px;
+  padding: 15px;
+}
+.bookImg {
+  width: 100%;
+  height: 200px;
+}
+.bookCard {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  transition: transform 0.3s ease;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.viewDetailsButton {
+  margin-top: auto;
+  text-decoration: none;
+}
+.bookCard:hover {
+  transform: translateY(-5px);
+}
+.bookHeading {
+  font-size: 16px;
+  margin-top: 16px;
+  font-weight: 600;
+}
+.description{
+  font-size: 14px;
+}
+.wishlistButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.wishlistButton.wishlisted {
+  color: #ff6b6b;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.pagination button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination button.activePage {
+  background-color: #333;
+  color: white;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .left {
+    display: none;
+  }
+}
+@media (min-width: 1320px) and (max-width: 1900px) {
+  
+}
+
+@media (min-width: 1024px) and (max-width: 1320px) {
+  .container {
+    width: 1024px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 768px;
+  }
+  .bookListWrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+}
+@media (min-width: 540px) and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+  .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .bookListWrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    margin-top: 0px;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .searchInput {
+    width: 250px;
+  }
+  .genreFilter {
+    width: 250px;
+  }
+}
+@media (min-width: 480px) and (max-width: 540px) {
+  .container {
+    width: 100%;
+  }
+  .bookListWrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .right {
+    flex-direction: column;
+  }
+  .searchInput {
+    width: 300px;
+    margin-bottom: 10px;
+  }
+
+  .genreFilter {
+    width: 300px;
+    margin-left: -8px;
+  }
+  .bookCard {
+    margin-top: 0px;
+  }
+
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+
+  .bookListWrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin-top: 0px;
+  }
+    .row {
+      flex-direction: column;
+    }
+  
+    .right {
+      flex-direction: column;
+    }
+  
+    .searchInput {
+      width: 300px;
+      margin-bottom: 10px;
+    }
+  
+    .genreFilter {
+      width: 300px;
+      margin-left: -8px;
+    }
+    .bookCard {
+      margin-top: 0px;
+    }
+
+}
+@media (min-width: 300px) and (max-width: 400px) {
+  .container {
+    width: 100%;
+  }
+  .bookListWrap {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    margin-top: 0px;
+  }
+  .row {
+    flex-direction: column;
+  }
+
+  .right {
+    flex-direction: column;
+  }
+  .bookCard {
+    margin-top: 0px;
+  }
+  .searchInput {
+    width: 300px;
+    margin-bottom: 10px;
+  }
+
+  .genreFilter {
+    width: 300px;
+    margin-left: -8px;
+  }
+}
+
+
+
+
+
+
+

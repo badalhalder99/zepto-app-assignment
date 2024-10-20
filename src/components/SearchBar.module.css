@@ -1,0 +1,27 @@
+.searchBar {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
