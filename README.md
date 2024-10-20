@@ -1,3 +1,12 @@
+## Response to Frontend Developer Coding Task - Badal Chandra Halder
+
+
+#### 🔗 Live Links of the project:
+
+https://zepto-app-assignment.vercel.app/
+
+You can go through the links and just see my project assignment.
+
 if you want to run my project on your local meching just follow the instruction...
 
 1.Clone the repository 
