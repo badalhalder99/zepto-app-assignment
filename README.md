@@ -1,9 +1,9 @@
-## Response to Frontend Developer Coding Task - Badal Chandra Halder
+## Medium Blog(Badal Halder)
 
 
 #### 🔗 Live Links of the project:
 
-https://medium-blog-swart.vercel.app/
+https://zepto-app-assignment.vercel.app/
 
 You can go through the links and just see my project assignment.
 
