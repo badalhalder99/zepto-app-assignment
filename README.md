@@ -1,4 +1,4 @@
-## Medium Blog(Badal Halder)
+## Frontend developer coding task(Badal Halder)
 
 
 #### 🔗 Live Links of the project:
