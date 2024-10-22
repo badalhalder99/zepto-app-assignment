@@ -3,7 +3,7 @@
 
 #### 🔗 Live Links of the project:
 
-https://zepto-app-assignment.vercel.app/
+https://medium-blog-swart.vercel.app/
 
 You can go through the links and just see my project assignment.
 
